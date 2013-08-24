@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="file"  method="upgrade">
+	<name>Responsive - Content Mobile View</name>
+	<author>alikon</author>
+	<copyright>(C) 2005 - 2013 Alikonweb. All rights reserved.</copyright>
+	<creationDate>August 2013</creationDate>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>inf@alikonweb.it</authorEmail>
+	<authorUrl>www.alikonweb.it</authorUrl>
+	<version>1.0.0</version>
+	<description>Content view for responsive artcile preview</description>
+	<scriptfile>script.php</scriptfile>
+	<fileset>
+		<files folder="mobile" target="components/com_content/views/mobile">
+			<file>index.html</file>
+			<file>view.html.php</file>
+			<folder>tmpl</folder>
+		</files>
+    <languages>
+        <language tag="en-GB" client="site">language/en-GB/en-GB.cli_zoombie.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.cli_zoombie.sys.ini</language>
+    </languages>
+	</fileset>
+	    <updateservers>
+        <server type="extension" priority="1" name="Responsive - Content Mobile View">http://www.joomladdons.eu/update/cli_zoombie_update.xml</server>
+    </updateservers>
+</extension>

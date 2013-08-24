@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Responsive Google Ads</name>
+	<author>alikon</author>
+	<creationDate>August 2013</creationDate>
+	<copyright>Copyright (C) 2013 -   alikonweb.it. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@alikonweb.it</authorEmail>
+	<authorUrl>www.alikonweb.it</authorUrl>
+	<version>1.0.1</version>
+	<description><![CDATA[
+		<style type="text/css">
+			span.readonly { padding: 10px; font-family: Arial; font-size:13px !important; font-weight: normal !important; text-align: justify; color: #4d4d4d; line-height: 24px; }
+			span.readonly h1 { clear:both; font-family: Georgia, sans-serif; font-size:38px; margin:30px 20px 23px; padding:0px 0px 24px 10px; color:#333; border-bottom: 1px solid #eee; font-weight: normal; }
+			span.readonly p { margin: 0 26px 10px }
+			span.readonly p a { color: #8e0b8c }
+			span.readonly p.homepage { margin-top: 30px }
+			span.readonly p.license { border-top: 1px solid #eee; font-size: 11px; margin: 30px 26px 0; padding: 6px 0; }
+			span.readonly p.version {  font-size: 11px; margin: 1px 26px 0; padding: 6px 0; }
+		</style>
+		<span class='readonly'>
+		<h1>Responsive Google Ads </h1>
+		<p> Responsive Google Ads allows to add responsive Google Adsense unit wich look good across all screen sizes, mobile, tablet, desktop.</p>
+		<p>If you like this tool, please feel free to buy me a <a href="http://www.alikonweb.it/blog/9-extensions-for-joomla/103-help-development" target="_blank">Beer</a> or submit a <a href="http://extensions.joomla.org/extensions/owner/alikon"> review </a> or <a href="http://extensions.joomla.org/extensions/owner/alikon">vote</a> to support us!	</p>
+		<p class='homepage'><a href='http://www.alikonweb.it/blog/9-extensions-for-joomla/93-responsive-google-adsense-in-joomla' target='_blank'>Learn more at the Alikonweb website.</a></p>		
+		<p class='license'>Responsive Google Ads is released under the <a target="_blank" href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL v2 license.</a></p>
+		<p class='version'>version: 1.0.1 released: August 2013</p> 
+		</span>
+	]]>
+    </description>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_responsive_gads.ini</language>
+	</languages>  
+		
+	<files>
+		<filename module="mod_responsive_gads">mod_responsive_gads.php</filename>
+		<folder>tmpl/</folder>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="Basic">
+				
+
+				<field name="ad_publisher_id" 
+					type="text" default="" 
+					label="AD_PUBLISHER_ID" 
+					description="AD_PUBLISHER_ID_DESC" />
+					
+                <field name="google_adtest" type="radio" default="1" label="Test Mode" description="for testing mode setting to yes otherwise set to no">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+					
+				<field name="adslot_leaderboard" 
+					type="text" default="" 
+					label="ADSLOT_LEADERBOARD" 
+					description="ADSLOT_LEADERBOARD_DESC" />
+					
+				<field name="adslot_banner" 
+					type="text" default="" 
+					label="ADSLOT_BANNER" 
+					description="ADSLOT_BANNER_DESC" />
+					
+				<field name="adslot_large_rectangle" 
+					type="text" default="" 
+					label="ADSLOT_LARGE_RECTANGLE" 
+					description="ADSLOT_LARGE_RECTANGLE_DESC" />
+					
+				<field name="adslot_medium_rectangle" 
+					type="text" default="" 
+					label="ADSLOT_MEDIUM_RECTANGLE" 
+					description="ADSLOT_MEDIUM_RECTANGLE_DESC" />
+					
+				<field name="adslot_square" 
+					type="text" default="" 
+					label="ADSLOT_SQUARE" 
+					description="ADSLOT_SQUARE_DESC" />	
+					
+				<field name="adslot_link_unit" 
+					type="text" default="" 
+					label="ADSLOT_LINK_UNIT" 
+					description="ADSLOT_LINK_UNIT_DESC" />						
+					
+			</fieldset>
+			
+			<fieldset name="advanced">
+			<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>	
+     <updateservers>
+        <server type="extension" priority="1" name="Responsive Google Ads">http://www.joomladdons.eu/update/mod_responsive_gads_update.xml</server>
+    </updateservers>	
+</extension>

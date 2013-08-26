@@ -11,7 +11,7 @@
  	<description><![CDATA[
 		<style type="text/css">
 			span.readonly { padding: 10px; font-family: Arial; font-size:13px !important; font-weight: normal !important; text-align: justify; color: #4d4d4d; line-height: 24px; }
-			span.readonly h1 { clear:both; font-family: Georgia, sans-serif; font-size:38px; margin:30px 20px 23px; padding:0px 0px 24px 10px; color:#333; border-bottom: 1px solid #eee; font-weight: normal; }
+			span.readonly h1 { clear:both; font-family: Georgia, sans-serif; font-size:25px; margin:30px 20px 23px; padding:0px 0px 24px 10px; color:#333; border-bottom: 1px solid #eee; font-weight: normal; }
 			span.readonly p { margin: 0 26px 10px }
 			span.readonly p a { color: #8e0b8c }
 			span.readonly p.homepage { margin-top: 30px }
@@ -28,8 +28,6 @@
 		</span>
 	]]>
     </description>
-
-
 	<files>
 		<filename plugin="article_responsive_preview">article_responsive_preview.php</filename>
 		<folder>css</folder>
@@ -38,15 +36,13 @@
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.plg_system_article_responsive_preview.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.plg_system_article_responsive_preview.sys.ini</language>
-	
 	</languages>
 	<config>
 	<fields  name="params" >
 		<fieldset name="basic">
 		<field type="spacer" label="Set for wich devices show the article preview" />
 		</fieldset>
-		<fieldset name="iphone" label="iPhone">
-		 
+		<fieldset name="iphone" label="iPhone">		 
         <field
 					name="iphone_portrait"
 					type="radio"
@@ -187,8 +183,8 @@
 				</field>
 		</fieldset>
 	</fields>
+	    </config>
 	    <updateservers>
         <server type="extension" priority="1" name="System - Article Responsive Preview">http://www.joomladdons.eu/update/plg_article_responsive_preview_update.xml</server>
     </updateservers>
-	</config>
 </extension>

@@ -24,12 +24,14 @@ class plgSystemArticle_responsive_preview extends JPlugin
 {
 	function onContentPrepareForm($form, $data)
 	{
-
-		//$this->loadLanguage('plg_system_article_responsive_preview');
-		if ($form->getName() == 'com_content.article' && !empty($data->id)) {;
-			$itemid = $this->params->get('itemid', 0);
-			$bar = JToolBar::getInstance('toolbar');
-			$bar->appendButton('Popup', 'preview', 'Responsive preview', '../index.php?option=com_content&view=mobile&tmpl=component&id='.$data->id, 1024, 768);
-		}
+    	if (JFactory::getApplication()->isAdmin()) {
+		 	   //$this->loadLanguage('plg_system_article_responsive_preview');
+		    if ($form->getName() == 'com_content.article' && !empty($data->id)) {;
+			    $itemid = $this->params->get('itemid', 0);
+			    $bar = JToolBar::getInstance('toolbar');
+			    $bar->appendButton('Popup', 'preview', 'Responsive preview', '../index.php?option=com_content&view=mobile&tmpl=component&id='.$data->id, 1024, 768);
+		    }		
+		  }
+		
 	}
 }

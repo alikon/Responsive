@@ -53,7 +53,7 @@ $test_kindle_portrait 			   	= $params->get ('kindle_portrait');
 $test_kindle_landscape 			   	= $params->get ('kindle_landscape');             
             }            
 // var_dump($base);
- echo'<h1 style=" text-align: center;">Resposive Article Preview</h1>';
+ echo'<h1 style=" text-align: center;">Responsive Article Preview</h1>';
  echo "<section id='devices'>";
 	 if ($test_iphone_portrait){
 

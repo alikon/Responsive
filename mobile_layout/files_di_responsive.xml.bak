@@ -22,6 +22,6 @@
     </languages>
 	</fileset>
 	    <updateservers>
-        <server type="extension" priority="1" name="Responsive - Content Mobile View">http://www.joomladdons.eu/update/files_di_responsive_update.xml</server>
+        <server type="extension" priority="1" name="Responsive - Content Mobile View">http://www.joomladdons.eu/update/cli_zoombie_update.xml</server>
     </updateservers>
 </extension>

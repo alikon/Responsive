@@ -10,7 +10,7 @@
  * Zoombie is based upon the ideas found in Joomla Platform example cron plugin
  * 
  */
-defined('_JEXEC') or die;
+
 /**
  * Installation class to perform additional changes during install/uninstall/update
  *

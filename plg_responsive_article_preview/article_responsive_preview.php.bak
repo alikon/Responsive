@@ -16,7 +16,7 @@
  *
  * */
 // no direct access
-defined('_JEXEC') or die;
+
 /**
  * Add a preview button in article edit form
  */
